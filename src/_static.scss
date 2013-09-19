@@ -1,0 +1,72 @@
+/* static non-generated stuff */
+/* margin helpers */
+.no-margin { margin: 0 !important; }
+.no-m-l { margin-left: 0 !important; }
+.no-m-r { margin-right: 0 !important; }
+.no-m-lr, .no-m-rl { margin-left: 0 !important; margin-right: 0 !important; }
+.no-m-t { margin-top: 0 !important; }
+.no-m-b { margin-bottom: 0 !important; }
+.no-m-tb, .no-m-bt { margin-top: 0 !important; margin-bottom: 0 !important; }
+.m-t-only { margin-left: 0 !important; margin-right: 0 !important; margin-bottom: 0 !important; }
+.m-b-only { margin-left: 0 !important; margin-right: 0 !important; margin-top: 0 !important; }
+.m-l-only { margin-right: 0 !important; margin-top: 0 !important; margin-bottom: 0 !important; }
+.m-r-only { margin-left: 0 !important; margin-top: 0 !important; margin-bottom: 0 !important; }
+
+/* */
+/* padding helpers */
+.no-padding { padding: 0 !important; }
+.no-pad-lr, .no-pad-rl { padding-left: 0 !important; padding-right: 0 !important; }
+.no-pad-r { padding-right: 0 !important; }
+.no-pad-l { padding-left: 0 !important; }
+.no-pad-tb, .no-pad-bt { padding-top: 0 !important; padding-bottom: 0 !important; }
+.no-pad-b { padding-bottom: 0 !important; }
+.no-pad-t { padding-top: 0 !important; }
+.pad-t-only { padding-left: 0 !important; padding-right: 0 !important; padding-bottom: 0 !important; }
+.pad-b-only { padding-left: 0 !important; padding-right: 0 !important; padding-top: 0 !important; }
+.pad-l-only { padding-right: 0 !important; padding-top: 0 !important; padding-bottom: 0 !important; }
+.pad-r-only { padding-left: 0 !important; padding-top: 0 !important; padding-bottom: 0 !important; }
+
+/* */
+/* font stuff */
+.lh-1 { line-height: 1 !important; }
+.lh-13 { line-height: 1.3 !important; }
+.bold { font-weight: bold; }
+.no-bold { font-weight: normal; }
+.italic { font-style: italic; }
+.normal { font-weight: normal; font-style: normal; }
+.sans-serif { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+.serif { font-family: Georgia, "Times New Romain", serif; }
+.uppercase { text-transform: uppercase; }
+.size-small { font-size: 75% !important; }
+.size-normal { font-size: 100% !important; }
+.size-medium { font-size: 125% !important; }
+.size-big { font-size: 150% !important; }
+.fff, .white { color: #FFF !important; }
+.black { color:#000 !important;}
+.inherit { font: inherit; }
+.no-wrap { white-space: nowrap; }
+.ls-0 { letter-spacing: -3px; margin-left: 10px; margin-right: 10px; white-space: nowrap; }
+.no-ul, .no-ul:hover, .no-ul a, .no-ul a:hover { text-decoration: none; } /* can go on <a> or on its parent */
+
+/* */
+/* general helpers */
+.no-border { border: none !important; }
+.border { border: 1px solid #ccc; }
+.color-inherit { color: inherit; }
+.clear { clear: both; }
+.clear:after { display: table; content: " "; clear: both; }
+.center { text-align: center; }
+.left { text-align: left; }
+.right { text-align: right; }
+.f-left { float: left; }
+.f-right { float: right; }
+.in-block { display: inline-block !important; *display: inline !important; zoom: 1; }
+.block { display: block !important; }
+.d-none, .hide { display: none !important; }
+.inline { display: inline !important; }
+.rel { position: relative !important; }
+.abs { position: absolute; }
+.v-mid { vertical-align: middle !important; }
+.full-input input, .full-input select, .full-input textarea { width: 100%; }
+.overflow-x-scroll { max-width: 100%; overflow-x: auto; } /* wrap around a table to make it sorta responsive  */
+.no-overflow { overflow: hidden; }

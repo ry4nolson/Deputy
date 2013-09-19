@@ -1,0 +1,31 @@
+@media (width: #{$overlayViewport1382}px), (width: #{$overlayWithNavViewport1382}px) {
+
+	@include overlay-grid($overlayColCount, $gridColWidth1382, $gridGutterWidth1382, $overlayWithNavColCount);
+
+	@include overlay-input($overlayWithNavColCount, $gridColWidth1382, $gridGutterWidth1382);
+
+}
+
+@media (width: #{$overlayViewport1224}px), (width: #{$overlayWithNavViewport1224}px) {
+
+	@include overlay-grid($overlayColCount, $gridColWidth1224, $gridGutterWidth1224, $overlayWithNavColCount);
+
+	@include overlay-input($overlayWithNavColCount, $gridColWidth1224, $gridGutterWidth1224);
+
+}
+
+@media (width: #{$overlayViewport}px), (width: #{$overlayWithNavViewport}px) {
+
+	@include overlay-grid($overlayColCount, $gridColWidth, $gridGutterWidth, $overlayWithNavColCount);
+
+	@include overlay-input($overlayWithNavColCount, $gridColWidth, $gridGutterWidth);
+
+}
+
+@media (width: #{$overlayViewport768}px), (width: #{$overlayWithNavViewport768}px) {
+
+	@include overlay-grid($overlayColCount, $gridColWidth768, $gridGutterWidth768, $overlayWithNavColCount);
+
+	@include overlay-input($overlayWithNavColCount, $gridColWidth768, $gridGutterWidth768);
+
+}

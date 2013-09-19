@@ -1,0 +1,48 @@
+// use /* */ to leave a blank line in the outputted file.
+
+@mixin paddingX($index, $prop, $rule) {
+	@if $index > 0 { 
+		#{$rule}#{($paddingIncrement * $index)} { 
+			#{$prop}: #{($paddingIncrement * $index)}px; 
+		}
+	}
+}
+@mixin marginX($index, $prop, $rule) {
+	@if $index > 0 {
+		#{$rule}#{($paddingIncrement * $index)} {
+			#{$prop}: #{($paddingIncrement * $index)}px;
+		}
+	}
+}
+
+/* */
+/* padding classes */
+//includes rule for all, top, right, bottom and left
+@for $i from 1 through $repeat {
+	/* #{($i * $paddingIncrement)} */
+	@include paddingX($i, "padding", ".pad-");
+	@include paddingX($i, "padding-top", ".pad-t-");
+	@include paddingX($i, "padding-right", ".pad-r-");
+	@include paddingX($i, "padding-bottom", ".pad-b-");
+	@include paddingX($i, "padding-left", ".pad-l-");
+	/* */
+}
+
+/* */
+/* margin classes */
+//includes rule for all, top, right, bottom and left
+@for $i from 1 through $repeat {
+	/* #{($i * $paddingIncrement)} */
+	@include marginX($i, "margin", ".m-");
+	@include marginX($i, "margin-top", ".m-t-");
+	@include marginX($i, "margin-right", ".m-r-");
+	@include marginX($i, "margin-bottom", ".m-b-");
+	@include marginX($i, "margin-left", ".m-l-");
+	/* */
+}
+
+/* */
+/* width classes */
+@for $i from 1 through 100 {
+	.w-#{$i} { width:#{$i + '%'}; }
+}
