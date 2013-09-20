@@ -19,7 +19,7 @@
 /* padding classes */
 //includes rule for all, top, right, bottom and left
 @for $i from 1 through $repeat {
-	/* #{($i * $paddingIncrement)} */
+	/* padding #{($i * $paddingIncrement)} */
 	@include paddingX($i, "padding", ".pad-");
 	@include paddingX($i, "padding-top", ".pad-t-");
 	@include paddingX($i, "padding-right", ".pad-r-");
@@ -32,12 +32,24 @@
 /* margin classes */
 //includes rule for all, top, right, bottom and left
 @for $i from 1 through $repeat {
-	/* #{($i * $paddingIncrement)} */
+	/* margin #{($i * $paddingIncrement)} */
 	@include marginX($i, "margin", ".m-");
 	@include marginX($i, "margin-top", ".m-t-");
 	@include marginX($i, "margin-right", ".m-r-");
 	@include marginX($i, "margin-bottom", ".m-b-");
 	@include marginX($i, "margin-left", ".m-l-");
+	/* */
+}
+
+/* */
+/* border classes */
+@for $i from 1 through $maxBorderWidth {
+	/* border-#{$i} */
+	.border-#{$i} { border:#{$i}px solid; }
+	.border-t-#{$i} { border-top:#{$i}px solid; }
+	.border-r-#{$i} { border-right:#{$i}px solid; }
+	.border-b-#{$i} { border-bottom:#{$i}px solid; }
+	.border-l-#{$i} { border-left:#{$i}px solid; }
 	/* */
 }
 

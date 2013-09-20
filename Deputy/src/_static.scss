@@ -28,6 +28,28 @@
 .pad-r-only { padding-left: 0 !important; padding-top: 0 !important; padding-bottom: 0 !important; }
 
 /* */
+/* border helpers */
+.no-border { border: none !important; }
+.no-border-t { border-top:none !important; }
+.no-border-r { border-right:none !important; }
+.no-border-b { border-bottom:none !important; }
+.no-border-l { border-left:none !important; }
+.no-border-lr, .no-border-rl { border-left:none !important; border-right:none !important; }
+.no-border-tb, .no-border-bt { border-top:none !important; border-bottom:none !important; }
+.no-border-tl, .no-border-lt { border-top:none !important; border-left:none !important; }
+.no-border-tr, .no-border-rt { border-top:none !important; border-right:none !important; }
+.no-border-bl, .no-border-lb { border-bottom:none !important; border-left:none !important; }
+.no-border-br, .no-border-rb { border-bottom:none !important; border-right:none !important; }
+.border-dashed { border-style:dashed !important; }
+.border-dotted { border-style:dashed !important; }
+[class*=border].border-black { border-color:#000; }
+[class*=border].border-light-grey { border-color:#eee; }
+[class*=border].border-medium-grey { border-color:#ccc; }
+[class*=border].border-grey { border-color:#999; }
+[class*=border].border-dark-grey { border-color:#333; }
+[class*=border].white { border-color:#fff; }
+
+/* */
 /* font stuff */
 .lh-1 { line-height: 1 !important; }
 .lh-13 { line-height: 1.3 !important; }
@@ -51,8 +73,6 @@
 
 /* */
 /* general helpers */
-.no-border { border: none !important; }
-.border { border: 1px solid #ccc; }
 .color-inherit { color: inherit; }
 .clear { clear: both; }
 .clear:after { display: table; content: " "; clear: both; }

@@ -8,10 +8,28 @@ task :helper do
 	file = File.read('dist\\helper.css')
 	file = file.gsub(/\n\n/, "\n")
 	file = file.gsub(/\/\* \*\//, "")
-	file = "/* \nDeputy Css\n© 2013 AmeriCommerce\nhttps://github.com/ry4nolson/Deputy\n*/\n\n" + file
+	file = "/* 
+* Deputy Css v0.1
+*
+* Copyright © 2013 Ryan Olson <ryan@americommerce.com>
+* This work is free. You can redistribute it and/or modify it under the
+* terms of the Do What The Fuck You Want To Public License, Version 2,
+* as published by Sam Hocevar. See http://www.wtfpl.net/ for more details.
+*
+* https://github.com/ry4nolson/Deputy
+*/\n\n" + file
 
 	file2 = File.read('dist\\helper.min.css')
-	file2 = "/* \nDeputy Css\n© 2013 AmeriCommerce\nhttps://github.com/ry4nolson/Deputy\n*/\n\n" + file2
+	file2 = "/* 
+* Deputy Css v0.1
+*
+* Copyright © 2013 Ryan Olson <ryan@americommerce.com>
+* This work is free. You can redistribute it and/or modify it under the
+* terms of the Do What The Fuck You Want To Public License, Version 2,
+* as published by Sam Hocevar. See http://www.wtfpl.net/ for more details.
+*
+* https://github.com/ry4nolson/Deputy
+*/\n\n" + file2
 
 	File.open('dist\\helper.css', 'w') do |f|
 		f.puts file

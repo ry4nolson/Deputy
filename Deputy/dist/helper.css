@@ -1,145 +1,150 @@
 /* 
-Deputy Css
-© 2013 AmeriCommerce
-https://github.com/ry4nolson/Deputy
+* Deputy Css v0.1
+*
+* Copyright © 2013 Ryan Olson <ryan@americommerce.com>
+* This work is free. You can redistribute it and/or modify it under the
+* terms of the Do What The Fuck You Want To Public License, Version 2,
+* as published by Sam Hocevar. See http://www.wtfpl.net/ for more details.
+*
+* https://github.com/ry4nolson/Deputy
 */
 
 
 /* padding classes */
-/* 5 */
+/* padding 5 */
 .pad-5 { padding: 5px !important; }
 .pad-t-5 { padding-top: 5px !important; }
 .pad-r-5 { padding-right: 5px !important; }
 .pad-b-5 { padding-bottom: 5px !important; }
 .pad-l-5 { padding-left: 5px !important; }
 
-/* 10 */
+/* padding 10 */
 .pad-10 { padding: 10px !important; }
 .pad-t-10 { padding-top: 10px !important; }
 .pad-r-10 { padding-right: 10px !important; }
 .pad-b-10 { padding-bottom: 10px !important; }
 .pad-l-10 { padding-left: 10px !important; }
 
-/* 15 */
+/* padding 15 */
 .pad-15 { padding: 15px !important; }
 .pad-t-15 { padding-top: 15px !important; }
 .pad-r-15 { padding-right: 15px !important; }
 .pad-b-15 { padding-bottom: 15px !important; }
 .pad-l-15 { padding-left: 15px !important; }
 
-/* 20 */
+/* padding 20 */
 .pad-20 { padding: 20px !important; }
 .pad-t-20 { padding-top: 20px !important; }
 .pad-r-20 { padding-right: 20px !important; }
 .pad-b-20 { padding-bottom: 20px !important; }
 .pad-l-20 { padding-left: 20px !important; }
 
-/* 25 */
+/* padding 25 */
 .pad-25 { padding: 25px !important; }
 .pad-t-25 { padding-top: 25px !important; }
 .pad-r-25 { padding-right: 25px !important; }
 .pad-b-25 { padding-bottom: 25px !important; }
 .pad-l-25 { padding-left: 25px !important; }
 
-/* 30 */
+/* padding 30 */
 .pad-30 { padding: 30px !important; }
 .pad-t-30 { padding-top: 30px !important; }
 .pad-r-30 { padding-right: 30px !important; }
 .pad-b-30 { padding-bottom: 30px !important; }
 .pad-l-30 { padding-left: 30px !important; }
 
-/* 35 */
+/* padding 35 */
 .pad-35 { padding: 35px !important; }
 .pad-t-35 { padding-top: 35px !important; }
 .pad-r-35 { padding-right: 35px !important; }
 .pad-b-35 { padding-bottom: 35px !important; }
 .pad-l-35 { padding-left: 35px !important; }
 
-/* 40 */
+/* padding 40 */
 .pad-40 { padding: 40px !important; }
 .pad-t-40 { padding-top: 40px !important; }
 .pad-r-40 { padding-right: 40px !important; }
 .pad-b-40 { padding-bottom: 40px !important; }
 .pad-l-40 { padding-left: 40px !important; }
 
-/* 45 */
+/* padding 45 */
 .pad-45 { padding: 45px !important; }
 .pad-t-45 { padding-top: 45px !important; }
 .pad-r-45 { padding-right: 45px !important; }
 .pad-b-45 { padding-bottom: 45px !important; }
 .pad-l-45 { padding-left: 45px !important; }
 
-/* 50 */
+/* padding 50 */
 .pad-50 { padding: 50px !important; }
 .pad-t-50 { padding-top: 50px !important; }
 .pad-r-50 { padding-right: 50px !important; }
 .pad-b-50 { padding-bottom: 50px !important; }
 .pad-l-50 { padding-left: 50px !important; }
 
-/* 55 */
+/* padding 55 */
 .pad-55 { padding: 55px !important; }
 .pad-t-55 { padding-top: 55px !important; }
 .pad-r-55 { padding-right: 55px !important; }
 .pad-b-55 { padding-bottom: 55px !important; }
 .pad-l-55 { padding-left: 55px !important; }
 
-/* 60 */
+/* padding 60 */
 .pad-60 { padding: 60px !important; }
 .pad-t-60 { padding-top: 60px !important; }
 .pad-r-60 { padding-right: 60px !important; }
 .pad-b-60 { padding-bottom: 60px !important; }
 .pad-l-60 { padding-left: 60px !important; }
 
-/* 65 */
+/* padding 65 */
 .pad-65 { padding: 65px !important; }
 .pad-t-65 { padding-top: 65px !important; }
 .pad-r-65 { padding-right: 65px !important; }
 .pad-b-65 { padding-bottom: 65px !important; }
 .pad-l-65 { padding-left: 65px !important; }
 
-/* 70 */
+/* padding 70 */
 .pad-70 { padding: 70px !important; }
 .pad-t-70 { padding-top: 70px !important; }
 .pad-r-70 { padding-right: 70px !important; }
 .pad-b-70 { padding-bottom: 70px !important; }
 .pad-l-70 { padding-left: 70px !important; }
 
-/* 75 */
+/* padding 75 */
 .pad-75 { padding: 75px !important; }
 .pad-t-75 { padding-top: 75px !important; }
 .pad-r-75 { padding-right: 75px !important; }
 .pad-b-75 { padding-bottom: 75px !important; }
 .pad-l-75 { padding-left: 75px !important; }
 
-/* 80 */
+/* padding 80 */
 .pad-80 { padding: 80px !important; }
 .pad-t-80 { padding-top: 80px !important; }
 .pad-r-80 { padding-right: 80px !important; }
 .pad-b-80 { padding-bottom: 80px !important; }
 .pad-l-80 { padding-left: 80px !important; }
 
-/* 85 */
+/* padding 85 */
 .pad-85 { padding: 85px !important; }
 .pad-t-85 { padding-top: 85px !important; }
 .pad-r-85 { padding-right: 85px !important; }
 .pad-b-85 { padding-bottom: 85px !important; }
 .pad-l-85 { padding-left: 85px !important; }
 
-/* 90 */
+/* padding 90 */
 .pad-90 { padding: 90px !important; }
 .pad-t-90 { padding-top: 90px !important; }
 .pad-r-90 { padding-right: 90px !important; }
 .pad-b-90 { padding-bottom: 90px !important; }
 .pad-l-90 { padding-left: 90px !important; }
 
-/* 95 */
+/* padding 95 */
 .pad-95 { padding: 95px !important; }
 .pad-t-95 { padding-top: 95px !important; }
 .pad-r-95 { padding-right: 95px !important; }
 .pad-b-95 { padding-bottom: 95px !important; }
 .pad-l-95 { padding-left: 95px !important; }
 
-/* 100 */
+/* padding 100 */
 .pad-100 { padding: 100px !important; }
 .pad-t-100 { padding-top: 100px !important; }
 .pad-r-100 { padding-right: 100px !important; }
@@ -148,145 +153,217 @@ https://github.com/ry4nolson/Deputy
 
 
 /* margin classes */
-/* 5 */
+/* margin 5 */
 .m-5 { margin: 5px !important; }
 .m-t-5 { margin-top: 5px !important; }
 .m-r-5 { margin-right: 5px !important; }
 .m-b-5 { margin-bottom: 5px !important; }
 .m-l-5 { margin-left: 5px !important; }
 
-/* 10 */
+/* margin 10 */
 .m-10 { margin: 10px !important; }
 .m-t-10 { margin-top: 10px !important; }
 .m-r-10 { margin-right: 10px !important; }
 .m-b-10 { margin-bottom: 10px !important; }
 .m-l-10 { margin-left: 10px !important; }
 
-/* 15 */
+/* margin 15 */
 .m-15 { margin: 15px !important; }
 .m-t-15 { margin-top: 15px !important; }
 .m-r-15 { margin-right: 15px !important; }
 .m-b-15 { margin-bottom: 15px !important; }
 .m-l-15 { margin-left: 15px !important; }
 
-/* 20 */
+/* margin 20 */
 .m-20 { margin: 20px !important; }
 .m-t-20 { margin-top: 20px !important; }
 .m-r-20 { margin-right: 20px !important; }
 .m-b-20 { margin-bottom: 20px !important; }
 .m-l-20 { margin-left: 20px !important; }
 
-/* 25 */
+/* margin 25 */
 .m-25 { margin: 25px !important; }
 .m-t-25 { margin-top: 25px !important; }
 .m-r-25 { margin-right: 25px !important; }
 .m-b-25 { margin-bottom: 25px !important; }
 .m-l-25 { margin-left: 25px !important; }
 
-/* 30 */
+/* margin 30 */
 .m-30 { margin: 30px !important; }
 .m-t-30 { margin-top: 30px !important; }
 .m-r-30 { margin-right: 30px !important; }
 .m-b-30 { margin-bottom: 30px !important; }
 .m-l-30 { margin-left: 30px !important; }
 
-/* 35 */
+/* margin 35 */
 .m-35 { margin: 35px !important; }
 .m-t-35 { margin-top: 35px !important; }
 .m-r-35 { margin-right: 35px !important; }
 .m-b-35 { margin-bottom: 35px !important; }
 .m-l-35 { margin-left: 35px !important; }
 
-/* 40 */
+/* margin 40 */
 .m-40 { margin: 40px !important; }
 .m-t-40 { margin-top: 40px !important; }
 .m-r-40 { margin-right: 40px !important; }
 .m-b-40 { margin-bottom: 40px !important; }
 .m-l-40 { margin-left: 40px !important; }
 
-/* 45 */
+/* margin 45 */
 .m-45 { margin: 45px !important; }
 .m-t-45 { margin-top: 45px !important; }
 .m-r-45 { margin-right: 45px !important; }
 .m-b-45 { margin-bottom: 45px !important; }
 .m-l-45 { margin-left: 45px !important; }
 
-/* 50 */
+/* margin 50 */
 .m-50 { margin: 50px !important; }
 .m-t-50 { margin-top: 50px !important; }
 .m-r-50 { margin-right: 50px !important; }
 .m-b-50 { margin-bottom: 50px !important; }
 .m-l-50 { margin-left: 50px !important; }
 
-/* 55 */
+/* margin 55 */
 .m-55 { margin: 55px !important; }
 .m-t-55 { margin-top: 55px !important; }
 .m-r-55 { margin-right: 55px !important; }
 .m-b-55 { margin-bottom: 55px !important; }
 .m-l-55 { margin-left: 55px !important; }
 
-/* 60 */
+/* margin 60 */
 .m-60 { margin: 60px !important; }
 .m-t-60 { margin-top: 60px !important; }
 .m-r-60 { margin-right: 60px !important; }
 .m-b-60 { margin-bottom: 60px !important; }
 .m-l-60 { margin-left: 60px !important; }
 
-/* 65 */
+/* margin 65 */
 .m-65 { margin: 65px !important; }
 .m-t-65 { margin-top: 65px !important; }
 .m-r-65 { margin-right: 65px !important; }
 .m-b-65 { margin-bottom: 65px !important; }
 .m-l-65 { margin-left: 65px !important; }
 
-/* 70 */
+/* margin 70 */
 .m-70 { margin: 70px !important; }
 .m-t-70 { margin-top: 70px !important; }
 .m-r-70 { margin-right: 70px !important; }
 .m-b-70 { margin-bottom: 70px !important; }
 .m-l-70 { margin-left: 70px !important; }
 
-/* 75 */
+/* margin 75 */
 .m-75 { margin: 75px !important; }
 .m-t-75 { margin-top: 75px !important; }
 .m-r-75 { margin-right: 75px !important; }
 .m-b-75 { margin-bottom: 75px !important; }
 .m-l-75 { margin-left: 75px !important; }
 
-/* 80 */
+/* margin 80 */
 .m-80 { margin: 80px !important; }
 .m-t-80 { margin-top: 80px !important; }
 .m-r-80 { margin-right: 80px !important; }
 .m-b-80 { margin-bottom: 80px !important; }
 .m-l-80 { margin-left: 80px !important; }
 
-/* 85 */
+/* margin 85 */
 .m-85 { margin: 85px !important; }
 .m-t-85 { margin-top: 85px !important; }
 .m-r-85 { margin-right: 85px !important; }
 .m-b-85 { margin-bottom: 85px !important; }
 .m-l-85 { margin-left: 85px !important; }
 
-/* 90 */
+/* margin 90 */
 .m-90 { margin: 90px !important; }
 .m-t-90 { margin-top: 90px !important; }
 .m-r-90 { margin-right: 90px !important; }
 .m-b-90 { margin-bottom: 90px !important; }
 .m-l-90 { margin-left: 90px !important; }
 
-/* 95 */
+/* margin 95 */
 .m-95 { margin: 95px !important; }
 .m-t-95 { margin-top: 95px !important; }
 .m-r-95 { margin-right: 95px !important; }
 .m-b-95 { margin-bottom: 95px !important; }
 .m-l-95 { margin-left: 95px !important; }
 
-/* 100 */
+/* margin 100 */
 .m-100 { margin: 100px !important; }
 .m-t-100 { margin-top: 100px !important; }
 .m-r-100 { margin-right: 100px !important; }
 .m-b-100 { margin-bottom: 100px !important; }
 .m-l-100 { margin-left: 100px !important; }
+
+
+/* border classes */
+/* border-1 */
+.border-1 { border: 1px solid; }
+.border-t-1 { border-top: 1px solid; }
+.border-r-1 { border-right: 1px solid; }
+.border-b-1 { border-bottom: 1px solid; }
+.border-l-1 { border-left: 1px solid; }
+
+/* border-2 */
+.border-2 { border: 2px solid; }
+.border-t-2 { border-top: 2px solid; }
+.border-r-2 { border-right: 2px solid; }
+.border-b-2 { border-bottom: 2px solid; }
+.border-l-2 { border-left: 2px solid; }
+
+/* border-3 */
+.border-3 { border: 3px solid; }
+.border-t-3 { border-top: 3px solid; }
+.border-r-3 { border-right: 3px solid; }
+.border-b-3 { border-bottom: 3px solid; }
+.border-l-3 { border-left: 3px solid; }
+
+/* border-4 */
+.border-4 { border: 4px solid; }
+.border-t-4 { border-top: 4px solid; }
+.border-r-4 { border-right: 4px solid; }
+.border-b-4 { border-bottom: 4px solid; }
+.border-l-4 { border-left: 4px solid; }
+
+/* border-5 */
+.border-5 { border: 5px solid; }
+.border-t-5 { border-top: 5px solid; }
+.border-r-5 { border-right: 5px solid; }
+.border-b-5 { border-bottom: 5px solid; }
+.border-l-5 { border-left: 5px solid; }
+
+/* border-6 */
+.border-6 { border: 6px solid; }
+.border-t-6 { border-top: 6px solid; }
+.border-r-6 { border-right: 6px solid; }
+.border-b-6 { border-bottom: 6px solid; }
+.border-l-6 { border-left: 6px solid; }
+
+/* border-7 */
+.border-7 { border: 7px solid; }
+.border-t-7 { border-top: 7px solid; }
+.border-r-7 { border-right: 7px solid; }
+.border-b-7 { border-bottom: 7px solid; }
+.border-l-7 { border-left: 7px solid; }
+
+/* border-8 */
+.border-8 { border: 8px solid; }
+.border-t-8 { border-top: 8px solid; }
+.border-r-8 { border-right: 8px solid; }
+.border-b-8 { border-bottom: 8px solid; }
+.border-l-8 { border-left: 8px solid; }
+
+/* border-9 */
+.border-9 { border: 9px solid; }
+.border-t-9 { border-top: 9px solid; }
+.border-r-9 { border-right: 9px solid; }
+.border-b-9 { border-bottom: 9px solid; }
+.border-l-9 { border-left: 9px solid; }
+
+/* border-10 */
+.border-10 { border: 10px solid; }
+.border-t-10 { border-top: 10px solid; }
+.border-r-10 { border-right: 10px solid; }
+.border-b-10 { border-bottom: 10px solid; }
+.border-l-10 { border-left: 10px solid; }
 
 
 /* width classes */
@@ -418,6 +495,27 @@ https://github.com/ry4nolson/Deputy
 .pad-l-only { padding-right: 0 !important; padding-top: 0 !important; padding-bottom: 0 !important; }
 .pad-r-only { padding-left: 0 !important; padding-top: 0 !important; padding-bottom: 0 !important; }
 
+/* border helpers */
+.no-border { border: none !important; }
+.no-border-t { border-top: none !important; }
+.no-border-r { border-right: none !important; }
+.no-border-b { border-bottom: none !important; }
+.no-border-l { border-left: none !important; }
+.no-border-lr, .no-border-rl { border-left: none !important; border-right: none !important; }
+.no-border-tb, .no-border-bt { border-top: none !important; border-bottom: none !important; }
+.no-border-tl, .no-border-lt { border-top: none !important; border-left: none !important; }
+.no-border-tr, .no-border-rt { border-top: none !important; border-right: none !important; }
+.no-border-bl, .no-border-lb { border-bottom: none !important; border-left: none !important; }
+.no-border-br, .no-border-rb { border-bottom: none !important; border-right: none !important; }
+.border-dashed { border-style: dashed !important; }
+.border-dotted { border-style: dashed !important; }
+[class*=border].border-black { border-color: #000; }
+[class*=border].border-light-grey { border-color: #eee; }
+[class*=border].border-medium-grey { border-color: #ccc; }
+[class*=border].border-grey { border-color: #999; }
+[class*=border].border-dark-grey { border-color: #333; }
+[class*=border].white { border-color: #fff; }
+
 /* font stuff */
 .lh-1 { line-height: 1 !important; }
 .lh-13 { line-height: 1.3 !important; }
@@ -441,8 +539,6 @@ https://github.com/ry4nolson/Deputy
 /* can go on <a> or on its parent */
 
 /* general helpers */
-.no-border { border: none !important; }
-.border { border: 1px solid #ccc; }
 .color-inherit { color: inherit; }
 .clear { clear: both; }
 .clear:after { display: table; content: " "; clear: both; }
