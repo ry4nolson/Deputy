@@ -8,8 +8,18 @@ task :helper do
 	file = File.read('dist\\helper.css')
 	file = file.gsub(/\n\n/, "\n")
 	file = file.gsub(/\/\* \*\//, "")
+	file = "/* \nDeputy Css\n© 2013 AmeriCommerce\nhttps://github.com/ry4nolson/Deputy\n*/\n\n" + file
+
+	file2 = File.read('dist\\helper.min.css')
+	file2 = "/* \nDeputy Css\n© 2013 AmeriCommerce\nhttps://github.com/ry4nolson/Deputy\n*/\n\n" + file2
+
 	File.open('dist\\helper.css', 'w') do |f|
 		f.puts file
 	end
+
+	File.open('dist\\helper.min.css', 'w') do |f|
+		f.puts file2
+	end
+	
 	puts 'Build complete'
 end

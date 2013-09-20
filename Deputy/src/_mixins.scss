@@ -3,14 +3,14 @@
 @mixin paddingX($index, $prop, $rule) {
 	@if $index > 0 { 
 		#{$rule}#{($paddingIncrement * $index)} { 
-			#{$prop}: #{($paddingIncrement * $index)}px; 
+			#{$prop}: #{($paddingIncrement * $index)}px !important; 
 		}
 	}
 }
 @mixin marginX($index, $prop, $rule) {
 	@if $index > 0 {
 		#{$rule}#{($paddingIncrement * $index)} {
-			#{$prop}: #{($paddingIncrement * $index)}px;
+			#{$prop}: #{($paddingIncrement * $index)}px !important;
 		}
 	}
 }
@@ -44,5 +44,5 @@
 /* */
 /* width classes */
 @for $i from 1 through 100 {
-	.w-#{$i} { width:#{$i + '%'}; }
+	.w-#{$i} { width:#{$i + '%'} !important; }
 }

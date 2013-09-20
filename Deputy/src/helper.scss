@@ -1,10 +1,3 @@
-// IE10 responsive
-// Required for Windows 8 split-screen snapping with IE10
-// http://timkadlec.com/2012/10/ie10-snap-mode-and-responsive-design/
-@-ms-viewport {
-	width: device-width;
-}
-
 @import "variables";
 @import "mixins";
 @import "static";
