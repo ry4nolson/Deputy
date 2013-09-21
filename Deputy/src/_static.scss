@@ -42,30 +42,47 @@
 .no-border-br, .no-border-rb { border-bottom:none !important; border-right:none !important; }
 .border-dashed { border-style:dashed !important; }
 .border-dotted { border-style:dashed !important; }
-[class*=border].border-black { border-color:#000; }
-[class*=border].border-light-grey { border-color:#eee; }
-[class*=border].border-medium-grey { border-color:#ccc; }
-[class*=border].border-grey { border-color:#999; }
-[class*=border].border-dark-grey { border-color:#333; }
-[class*=border].white { border-color:#fff; }
+//change colors in the _variables.scss file
+[class*=border].border-black { border-color:$black; }
+[class*=border].border-light-grey { border-color:$lightGrey; }
+[class*=border].border-medium-grey { border-color:$mediumGrey; }
+[class*=border].border-grey { border-color:$grey; }
+[class*=border].border-dark-grey { border-color:$darkGrey; }
+[class*=border].border-white { border-color:$white; }
+
+/* */
+/* text colors */
+.black { color:$black; }
+.light-grey { color:$lightGrey; }
+.medium-grey { color:$mediumGrey; }
+.grey { color:$grey; }
+.dark-grey { color:$darkGrey; }
+.white, .fff { color:$white; }
+
+/* */
+/* background colors */
+.bg-black { background-color:$black; }
+.bg-light-grey { background-color:$lightGrey; }
+.bg-medium-grey { background-color:$mediumGrey; }
+.bg-grey { background-color:$grey; }
+.bg-dark-grey { background-color:$darkGrey; }
+.bg-white { background-color:$white; }
 
 /* */
 /* font stuff */
 .lh-1 { line-height: 1 !important; }
 .lh-13 { line-height: 1.3 !important; }
-.bold { font-weight: bold; }
+.bold, .strong { font-weight: bold; }
 .no-bold { font-weight: normal; }
-.italic { font-style: italic; }
+.italic, .em { font-style: italic; }
 .normal { font-weight: normal; font-style: normal; }
-.sans-serif { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
-.serif { font-family: Georgia, "Times New Romain", serif; }
+.sans-serif { font-family: $sansSerif; }
+.serif { font-family: $serif; }
 .uppercase { text-transform: uppercase; }
 .size-small { font-size: 75% !important; }
 .size-normal { font-size: 100% !important; }
 .size-medium { font-size: 125% !important; }
 .size-big { font-size: 150% !important; }
-.fff, .white { color: #FFF !important; }
-.black { color:#000 !important;}
 .inherit { font: inherit; }
 .no-wrap { white-space: nowrap; }
 .ls-0 { letter-spacing: -3px; margin-left: 10px; margin-right: 10px; white-space: nowrap; }
@@ -91,3 +108,4 @@
 .full-input input, .full-input select, .full-input textarea { width: 100%; }
 .overflow-x-scroll { max-width: 100%; overflow-x: auto; } /* wrap around a table to make it sorta responsive  */
 .no-overflow { overflow: hidden; }
+.bg-none { background:none; background-image:none; background-color:transparent; }
