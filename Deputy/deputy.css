@@ -523,26 +523,26 @@
 .border-dashed { border-style: dashed !important; }
 .border-dotted { border-style: dashed !important; }
 [class*=border].border-black { border-color: black; }
-[class*=border].border-light-grey { border-color: #eeeeee; }
+[class*=border].border-light-grey { border-color: #e5e5e5; }
 [class*=border].border-medium-grey { border-color: #cccccc; }
 [class*=border].border-grey { border-color: #999999; }
-[class*=border].border-dark-grey { border-color: #333333; }
+[class*=border].border-dark-grey { border-color: #222222; }
 [class*=border].border-white { border-color: white; }
 
 /* text colors */
 .black { color: black; }
-.light-grey { color: #eeeeee; }
+.light-grey { color: #e5e5e5; }
 .medium-grey { color: #cccccc; }
 .grey { color: #999999; }
-.dark-grey { color: #333333; }
+.dark-grey { color: #222222; }
 .white, .fff { color: white; }
 
 /* background colors */
 .bg-black { background-color: black; }
-.bg-light-grey { background-color: #eeeeee; }
+.bg-light-grey { background-color: #e5e5e5; }
 .bg-medium-grey { background-color: #cccccc; }
 .bg-grey { background-color: #999999; }
-.bg-dark-grey { background-color: #333333; }
+.bg-dark-grey { background-color: #222222; }
 .bg-white { background-color: white; }
 
 /* font stuff */
