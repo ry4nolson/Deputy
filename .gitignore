@@ -2,6 +2,7 @@
 *.sass-cache
 Deputy/.sass-cache/
 *.sublime-workspace
+DeputyCss.sublime-workspace
 
 
 #################
