@@ -4,48 +4,116 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Deputy by ry4nolson</title>
+
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/respond.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
-    <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
   <body>
-      <div id="header">
-        <nav>
-          <li class="fork"><a href="https://github.com/ry4nolson/Deputy">View On GitHub</a></li>
-          <li class="downloads"><a href="https://github.com/ry4nolson/Deputy/zipball/master">ZIP</a></li>
-          <li class="downloads"><a href="https://github.com/ry4nolson/Deputy/tarball/master">TAR</a></li>
-          <li class="title">DOWNLOADS</li>
-        </nav>
-      </div><!-- end header -->
-
     <div class="wrapper">
+      <header>
+        <h1>Deputy</h1>
+        <p>Useful css helper classes</p>
 
+        <p class="view"><a href="https://github.com/ry4nolson/Deputy">View the Project on GitHub <small>ry4nolson/Deputy</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/ry4nolson/Deputy/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/ry4nolson/Deputy/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/ry4nolson/Deputy">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
       <section>
-        <div id="title">
-          <h1>Deputy</h1>
-          <p>Useful css helper classes</p>
-          <hr>
-          <span class="credits left">Project maintained by <a href="https://github.com/ry4nolson">ry4nolson</a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
-        </div>
-
         <h1>
-<a name="deputy" class="anchor" href="#deputy"><span class="octicon octicon-link"></span></a>Deputy</h1>
+<a name="deputy-css" class="anchor" href="#deputy-css"><span class="octicon octicon-link"></span></a>Deputy CSS</h1>
 
-<p>Useful css helper classes</p>
+<p>Deputy CSS is a simple CSS "library" with helpful css classes for common design requirements.</p>
+
+<p>The project is generated with SASS.</p>
+
+<p>It includes padding, margin, width, border, color, typography, and general helpers.</p>
+
+<p>It's a little bit backwards from the "semantic only" school of thought but it's what I prefer.</p>
+
+<h1>
+<a name="examples" class="anchor" href="#examples"><span class="octicon octicon-link"></span></a>Examples</h1>
+
+<h3>
+<a name="padding-and-margin" class="anchor" href="#padding-and-margin"><span class="octicon octicon-link"></span></a>Padding and Margin</h3>
+
+<p>"I want this div to have 20 pixels of padding"
+--- Some guy</p>
+
+<div class="highlight highlight-html"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"pad-20"</span><span class="nt">&gt;</span>
+  stuff
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+
+<p>Also included are helpers to apply padding to only certain sides of an element</p>
+
+<p>"I want 20 pixels of padding on the left side of this div"
+--- Same guy as before</p>
+
+<div class="highlight highlight-html"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"pad-20 pad-l-only"</span><span class="nt">&gt;</span>
+  stuff
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+
+<p>or</p>
+
+<div class="highlight highlight-html"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"pad-l-20"</span><span class="nt">&gt;</span>
+  stuff
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+
+<p>Padding and Margin classes are generated in increments of 5 up to 100. Each increment has 5 rules: 
+<code>.pad-N, .pad-t-N, .pad-r-N, .pad-b-N and .pad-l-N</code> (N being the iteration)</p>
+
+<p>The same applies to margin.
+<code>.m-N, .m-t-N, .m-r-N, .m-b-N and .m-l-N</code></p>
+
+<p><code>.no-margin</code> and <code>.no-padding</code> - These clear out margin and/or padding on an element.</p>
+
+<p>Additional classes are available to clear margin/padding on certain sides.
+ex. <code>.no-pad-l, .no-m-l, .no-pad-tb, .no-m-lr</code></p>
+
+<p>There are also some special classes such as <code>.m-auto</code> which sets auto left and right margin.</p>
+
+<h3>
+<a name="width" class="anchor" href="#width"><span class="octicon octicon-link"></span></a>Width</h3>
+
+<p>Width classes are generated from 1-100% as <code>.w-1 {  } .... .w-100 {  }</code></p>
+
+<h3>
+<a name="border" class="anchor" href="#border"><span class="octicon octicon-link"></span></a>Border</h3>
+
+<p>Border classes are generated from 1-10 such as </p>
+
+<div class="highlight highlight-css"><pre><span class="c">/* border-3 */</span>
+<span class="nc">.border-3</span> <span class="p">{</span> <span class="k">border</span><span class="o">:</span> <span class="m">3px</span> <span class="k">solid</span><span class="p">;</span> <span class="p">}</span>
+<span class="nc">.border-t-3</span> <span class="p">{</span> <span class="k">border-top</span><span class="o">:</span> <span class="m">3px</span> <span class="k">solid</span><span class="p">;</span> <span class="p">}</span>
+<span class="nc">.border-r-3</span> <span class="p">{</span> <span class="k">border-right</span><span class="o">:</span> <span class="m">3px</span> <span class="k">solid</span><span class="p">;</span> <span class="p">}</span>
+<span class="nc">.border-b-3</span> <span class="p">{</span> <span class="k">border-bottom</span><span class="o">:</span> <span class="m">3px</span> <span class="k">solid</span><span class="p">;</span> <span class="p">}</span>
+<span class="nc">.border-l-3</span> <span class="p">{</span> <span class="k">border-left</span><span class="o">:</span> <span class="m">3px</span> <span class="k">solid</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+<p>this can be combined with other border classes for color and style.</p>
+
+<div class="highlight highlight-html"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"border-b-1 border-dashed border-grey"</span><span class="nt">&gt;</span>
+  some thing
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
       </section>
-
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/ry4nolson">ry4nolson</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    <script src="javascripts/scale.fix.js"></script>
     
   </body>
 </html>
