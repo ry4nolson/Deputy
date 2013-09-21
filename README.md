@@ -3,6 +3,8 @@ Deputy CSS
 
 Deputy CSS is a simple CSS "library" with helpful css classes for common design requirements.
 
+see GitHub page here http://ry4nolson.github.io/Deputy/
+
 The project is generated with SASS.
 
 It includes padding, margin, width, border, color, typography, and general helpers.
@@ -79,4 +81,32 @@ this can be combined with other border classes for color and style.
 </div>
 ```
 
+<h3>Colors</h3>
 
+The ```_variables.scss``` file contains 6 color variables from black to white.
+
+The defaults are:
+```scss
+
+$black: #000;
+$white: #fff;
+$grey: #999;
+$lightGrey: #e5e5e5;
+$mediumGrey: #ccc;
+$darkGrey: #222;
+```
+
+These are used to create border, text color, and background classes
+
+The color by itself is a font color class.
+ex: 
+```css
+.medium-grey { color:$mediumGrey; }
+```
+
+Prefix ```bg-``` for background color and ```border-``` for border color.
+
+The colors in the css are 
+```
+black, light-grey, medium-grey, grey, dark-grey, white|fff
+```
