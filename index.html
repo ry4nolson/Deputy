@@ -33,6 +33,8 @@
 
 <p>Deputy CSS is a simple CSS "library" with helpful css classes for common design requirements.</p>
 
+<p>see GitHub page here <a href="http://ry4nolson.github.io/Deputy/">http://ry4nolson.github.io/Deputy/</a></p>
+
 <p>The project is generated with SASS.</p>
 
 <p>It includes padding, margin, width, border, color, typography, and general helpers.</p>
@@ -70,13 +72,24 @@
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 
-<p>Padding and Margin classes are generated in increments of 5 up to 100. Each increment has 5 rules: 
-<code>.pad-N, .pad-t-N, .pad-r-N, .pad-b-N and .pad-l-N</code> (N being the iteration)</p>
+<p>Padding and Margin classes are generated in increments of 5 up to 100. Each increment has 5 rules: </p>
 
-<p>The same applies to margin.
-<code>.m-N, .m-t-N, .m-r-N, .m-b-N and .m-l-N</code></p>
+<div class="highlight highlight-css"><pre><span class="c">/* padding 20 */</span>
+<span class="nc">.pad-20</span> <span class="p">{</span> <span class="k">padding</span><span class="o">:</span> <span class="m">20px</span> <span class="cp">!important</span><span class="p">;</span> <span class="p">}</span>
+<span class="nc">.pad-t-20</span> <span class="p">{</span> <span class="k">padding-top</span><span class="o">:</span> <span class="m">20px</span> <span class="cp">!important</span><span class="p">;</span> <span class="p">}</span>
+<span class="nc">.pad-r-20</span> <span class="p">{</span> <span class="k">padding-right</span><span class="o">:</span> <span class="m">20px</span> <span class="cp">!important</span><span class="p">;</span> <span class="p">}</span>
+<span class="nc">.pad-b-20</span> <span class="p">{</span> <span class="k">padding-bottom</span><span class="o">:</span> <span class="m">20px</span> <span class="cp">!important</span><span class="p">;</span> <span class="p">}</span>
+<span class="nc">.pad-l-20</span> <span class="p">{</span> <span class="k">padding-left</span><span class="o">:</span> <span class="m">20px</span> <span class="cp">!important</span><span class="p">;</span> <span class="p">}</span>
+<span class="o">...</span>
+<span class="c">/* margin 20 */</span>
+<span class="nc">.m-20</span> <span class="p">{</span> <span class="k">margin</span><span class="o">:</span> <span class="m">20px</span> <span class="cp">!important</span><span class="p">;</span> <span class="p">}</span>
+<span class="nc">.m-t-20</span> <span class="p">{</span> <span class="k">margin-top</span><span class="o">:</span> <span class="m">20px</span> <span class="cp">!important</span><span class="p">;</span> <span class="p">}</span>
+<span class="nc">.m-r-20</span> <span class="p">{</span> <span class="k">margin-right</span><span class="o">:</span> <span class="m">20px</span> <span class="cp">!important</span><span class="p">;</span> <span class="p">}</span>
+<span class="nc">.m-b-20</span> <span class="p">{</span> <span class="k">margin-bottom</span><span class="o">:</span> <span class="m">20px</span> <span class="cp">!important</span><span class="p">;</span> <span class="p">}</span>
+<span class="nc">.m-l-20</span> <span class="p">{</span> <span class="k">margin-left</span><span class="o">:</span> <span class="m">20px</span> <span class="cp">!important</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
 
-<p><code>.no-margin</code> and <code>.no-padding</code> - These clear out margin and/or padding on an element.</p>
+<p><code>.no-margin</code> and <code>.no-padding</code> - These set padding/margin to 0 on an element</p>
 
 <p>Additional classes are available to clear margin/padding on certain sides.
 ex. <code>.no-pad-l, .no-m-l, .no-pad-tb, .no-m-lr</code></p>
@@ -87,6 +100,18 @@ ex. <code>.no-pad-l, .no-m-l, .no-pad-tb, .no-m-lr</code></p>
 <a name="width" class="anchor" href="#width"><span class="octicon octicon-link"></span></a>Width</h3>
 
 <p>Width classes are generated from 1-100% as <code>.w-1 {  } .... .w-100 {  }</code></p>
+
+<p>Width classes are also generated in a fractional format such as <code>.w-1-5</code>. This means 1/5 width or 20%.
+Fraction denomintors are generated from 2 to 24</p>
+
+<div class="highlight highlight-css"><pre><span class="nc">.w-1-2</span> <span class="p">{</span> <span class="k">width</span><span class="o">:</span> <span class="m">49</span><span class="o">.</span><span class="m">99</span><span class="o">%</span> <span class="cp">!important</span><span class="p">;</span> <span class="p">}</span>
+<span class="o">...</span>
+<span class="nc">.w-5-14</span> <span class="p">{</span> <span class="k">width</span><span class="o">:</span> <span class="m">35</span><span class="o">.</span><span class="m">70429</span><span class="o">%</span> <span class="cp">!important</span><span class="p">;</span> <span class="p">}</span>
+<span class="o">...</span>
+<span class="nc">.w-23-24</span> <span class="p">{</span> <span class="k">width</span><span class="o">:</span> <span class="m">95</span><span class="o">.</span><span class="m">82333</span><span class="o">%</span> <span class="cp">!important</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+<p>.01 is subtracted from every value just to not have to deal with weird rounding stuff.</p>
 
 <h3>
 <a name="border" class="anchor" href="#border"><span class="octicon octicon-link"></span></a>Border</h3>
