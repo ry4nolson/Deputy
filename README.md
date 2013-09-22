@@ -44,12 +44,24 @@ or
 ```
 
 Padding and Margin classes are generated in increments of 5 up to 100. Each increment has 5 rules: 
-```.pad-N, .pad-t-N, .pad-r-N, .pad-b-N and .pad-l-N``` (N being the iteration)
+```css
+/* padding 20 */
+.pad-20 { padding: 20px !important; }
+.pad-t-20 { padding-top: 20px !important; }
+.pad-r-20 { padding-right: 20px !important; }
+.pad-b-20 { padding-bottom: 20px !important; }
+.pad-l-20 { padding-left: 20px !important; }
+...
+/* margin 20 */
+.m-20 { margin: 20px !important; }
+.m-t-20 { margin-top: 20px !important; }
+.m-r-20 { margin-right: 20px !important; }
+.m-b-20 { margin-bottom: 20px !important; }
+.m-l-20 { margin-left: 20px !important; }
+```
 
-The same applies to margin.
-```.m-N, .m-t-N, .m-r-N, .m-b-N and .m-l-N```
 
-```.no-margin``` and ```.no-padding``` - These clear out margin and/or padding on an element.
+```.no-margin``` and ```.no-padding``` - These set padding/margin to 0 on an element
 
 Additional classes are available to clear margin/padding on certain sides.
 ex. ```.no-pad-l, .no-m-l, .no-pad-tb, .no-m-lr```
@@ -60,6 +72,18 @@ There are also some special classes such as ```.m-auto``` which sets auto left a
 <h3>Width</h3>
 
 Width classes are generated from 1-100% as ```.w-1 {  } .... .w-100 {  }```
+
+Width classes are also generated in a fractional format such as ```.w-1-5```. This means 1/5 width or 20%.
+Fraction denomintors are generated from 2 to 24
+```css
+.w-1-2 { width: 49.99% !important; }
+...
+.w-5-14 { width: 35.70429% !important; }
+...
+.w-23-24 { width: 95.82333% !important; }
+```
+.01 is subtracted from every value just to not have to deal with weird rounding stuff.
+
 
 <h3>Border</h3>
 
