@@ -58,3 +58,10 @@
 @for $i from 1 through 100 {
 	.w-#{$i} { width:#{$i + '%'} !important; }
 }
+/* fraction-like width classes */
+@for $i from 2 through 24 {
+	@for $x from 1 through ($i - 1) {
+		.w-#{$x}-#{$i} { width:#{100 * ($x/$i) - .01}% !important; }
+	}
+
+}
