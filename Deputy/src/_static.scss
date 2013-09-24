@@ -100,6 +100,7 @@
 .right { text-align: right; }
 .f-left { float: left; }
 .f-right { float: right; }
+.f-none { float:none; }
 .in-block { display: inline-block !important; *display: inline !important; zoom: 1; }
 .block { display: block !important; }
 .d-none, .hide { display: none !important; }
@@ -108,6 +109,8 @@
 .abs { position: absolute; }
 .v-mid { vertical-align: middle !important; }
 .full-input input, .full-input select, .full-input textarea { width: 100%; }
+.no-shadow { box-shadow:none !important; }
+.no-border-radius { border-radius:0 !important; }
 /* wrap around a table to make it sorta responsive  */
 .overflow-x-scroll { max-width: 100%; overflow-x: auto; } 
 .no-overflow { overflow: hidden; }
