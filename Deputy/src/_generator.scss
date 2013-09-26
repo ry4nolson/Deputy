@@ -2,7 +2,13 @@
 
 @mixin propertyRuleFactory($index, $propList, $rule, $increment, $unit:px) {
 	@if $index > 0 { 
-		#{$rule}#{($increment * $index)} { 
+		.#{$rule}-#{($increment * $index)} { 
+			@each $prop in $propList {
+				#{$prop}: #{($increment * $index)}#{$unit} !important; 
+			}
+		}
+	} @else {
+		.no-#{$rule} { 
 			@each $prop in $propList {
 				#{$prop}: #{($increment * $index)}#{$unit} !important; 
 			}
@@ -13,26 +19,26 @@
 /* */
 /* padding classes */
 //includes rule for all, top, right, bottom and left
-@for $i from 1 through $repeat {
+@for $i from 0 through $repeat {
 	/* padding #{($i * $paddingIncrement)} */
-	@include propertyRuleFactory($i, "padding", ".pad-", $paddingIncrement);
-	@include propertyRuleFactory($i, "padding-top", ".pad-t-", $paddingIncrement);
-	@include propertyRuleFactory($i, "padding-right", ".pad-r-", $paddingIncrement);
-	@include propertyRuleFactory($i, "padding-bottom", ".pad-b-", $paddingIncrement);
-	@include propertyRuleFactory($i, "padding-left", ".pad-l-", $paddingIncrement);
+	@include propertyRuleFactory($i, "padding", "pad", $paddingIncrement);
+	@include propertyRuleFactory($i, "padding-top", "pad-t", $paddingIncrement);
+	@include propertyRuleFactory($i, "padding-right", "pad-r", $paddingIncrement);
+	@include propertyRuleFactory($i, "padding-bottom", "pad-b", $paddingIncrement);
+	@include propertyRuleFactory($i, "padding-left", "pad-l", $paddingIncrement);
 	/* */
 }
 
 /* */
 /* margin classes */
 //includes rule for all, top, right, bottom and left
-@for $i from 1 through $repeat {
-	/* margin #{($i * $paddingIncrement)} */
-	@include propertyRuleFactory($i, "margin", ".m-", $marginIncrement);
-	@include propertyRuleFactory($i, "margin-top", ".m-t-", $marginIncrement);
-	@include propertyRuleFactory($i, "margin-right", ".m-r-", $marginIncrement);
-	@include propertyRuleFactory($i, "margin-bottom", ".m-b-", $marginIncrement);
-	@include propertyRuleFactory($i, "margin-left", ".m-l-", $marginIncrement);
+@for $i from 0 through $repeat {
+	/* margin #{($i * $marginIncrement)} */
+	@include propertyRuleFactory($i, "margin", "m", $marginIncrement);
+	@include propertyRuleFactory($i, "margin-top", "m-t", $marginIncrement);
+	@include propertyRuleFactory($i, "margin-right", "m-r", $marginIncrement);
+	@include propertyRuleFactory($i, "margin-bottom", "m-b", $marginIncrement);
+	@include propertyRuleFactory($i, "margin-left", "m-l", $marginIncrement);
 	/* */
 }
 
@@ -64,16 +70,16 @@
 /* */
 /* border radius classes */
 //includes rule for all, top, right, bottom and left
-@for $i from 1 through ($repeat/2) {
+@for $i from 0 through ($repeat/2) {
 	/* margin #{($i * $paddingIncrement)} */
-	@include propertyRuleFactory($i, "border-radius", ".br-", $marginIncrement);
-	@include propertyRuleFactory($i, "border-top-left-radius", ".br-tl-", $marginIncrement, "%");
-	@include propertyRuleFactory($i, "border-top-right-radius", ".br-tr-", $marginIncrement, "%");
-	@include propertyRuleFactory($i, "border-bottom-left-radius", ".br-bl-", $marginIncrement, "%");
-	@include propertyRuleFactory($i, "border-bottom-right-radius", ".br-br-", $marginIncrement, "%");
-	@include propertyRuleFactory($i, ("border-bottom-right-radius", "border-bottom-left-radius"), ".br-b-", $marginIncrement, "%");
-	@include propertyRuleFactory($i, ("border-top-right-radius", "border-top-left-radius"), ".br-t-", $marginIncrement, "%");
-	@include propertyRuleFactory($i, ("border-bottom-right-radius", "border-top-right-radius"), ".br-l-", $marginIncrement, "%");
-	@include propertyRuleFactory($i, ("border-bottom-left-radius", "border-top-left-radius"), ".br-r-", $marginIncrement, "%");
+	@include propertyRuleFactory($i, "border-radius", "br", $borderRadiusIncrement);
+	@include propertyRuleFactory($i, "border-top-left-radius", "br-tl", $borderRadiusIncrement);
+	@include propertyRuleFactory($i, "border-top-right-radius", "br-tr", $borderRadiusIncrement);
+	@include propertyRuleFactory($i, "border-bottom-left-radius", "br-bl", $borderRadiusIncrement);
+	@include propertyRuleFactory($i, "border-bottom-right-radius", "br-br", $borderRadiusIncrement);
+	@include propertyRuleFactory($i, ("border-bottom-right-radius", "border-bottom-left-radius"), "br-b", $borderRadiusIncrement);
+	@include propertyRuleFactory($i, ("border-top-right-radius", "border-top-left-radius"), "br-t", $borderRadiusIncrement);
+	@include propertyRuleFactory($i, ("border-bottom-right-radius", "border-top-right-radius"), "br-l", $borderRadiusIncrement);
+	@include propertyRuleFactory($i, ("border-bottom-left-radius", "border-top-left-radius"), "br-r", $borderRadiusIncrement);
 	/* */
 }
