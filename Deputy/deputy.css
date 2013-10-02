@@ -1135,6 +1135,8 @@
 .overflow-x-scroll { max-width: 100%; overflow-x: auto; }
 .no-overflow { overflow: hidden; }
 
+/* Responsive stuff. */
+/* Breakpoints are the same as in Bootstrap 3 */
 /* Extra small devices (phones, up to 480px) */
 @media (max-width: 480px) { 
   .xs-left { text-align: left !important; }
