@@ -1034,22 +1034,6 @@
 .br-l-10 { border-bottom-right-radius: 10px !important; border-top-right-radius: 10px !important; }
 .br-r-10 { border-bottom-left-radius: 10px !important; border-top-left-radius: 10px !important; }
 
-/* Extra small devices (phones, up to 480px) */
-@media (max-width: 480px) { .xs-left { text-align: left !important; }
-  .xs-center { text-align: center !important; }
-  .xs-right { text-align: right !important; } }
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) { .sm-left { text-align: left !important; }
-  .sm-center { text-align: center !important; }
-  .sm-right { text-align: right !important; } }
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) { .md-left { text-align: left !important; }
-  .md-center { text-align: center !important; }
-  .md-right { text-align: right !important; } }
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { .lg-left { text-align: left !important; }
-  .lg-center { text-align: center !important; }
-  .lg-right { text-align: right !important; } }
 
 /* static non-generated stuff */
 /* margin helpers */
