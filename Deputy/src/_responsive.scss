@@ -1,33 +1,51 @@
 
 /* */
 /* Responsive stuff. */
-/* Breakpoints are the same as in Bootstrap 3 */
+/* Breakpoints are the same as in Bootstrap 3 but apply in the opposite direction */
 /* Extra small devices (phones, up to 480px) */
 @media (max-width: $screen-xs) { /* */
 	.xs-left { text-align: left !important; }
 	.xs-center { text-align: center !important; }
 	.xs-right { text-align: right !important; }/* */
+	.sm-left { text-align: left !important; }
+	.sm-center { text-align: center !important; }
+	.sm-right { text-align: right !important; }/* */
+	.md-left { text-align: left !important; }
+	.md-center { text-align: center !important; }
+	.md-right { text-align: right !important; }/* */
+	.lg-left { text-align: left !important; }
+	.lg-center { text-align: center !important; }
+	.lg-right { text-align: right !important; }/* */
 }
 
 /* */
 /* Small devices (tablets, 768px and up) */
-@media (min-width: $screen-sm) { /* */
+@media (max-width: $screen-sm) { /* */
 	.sm-left { text-align: left !important; }
 	.sm-center { text-align: center !important; }
 	.sm-right { text-align: right !important; }/* */
+	.md-left { text-align: left !important; }
+	.md-center { text-align: center !important; }
+	.md-right { text-align: right !important; }/* */
+	.lg-left { text-align: left !important; }
+	.lg-center { text-align: center !important; }
+	.lg-right { text-align: right !important; }/* */
 }
 
 /* */
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: $screen-md) { /* */
+@media (max-width: $screen-md) { /* */
 	.md-left { text-align: left !important; }
 	.md-center { text-align: center !important; }
 	.md-right { text-align: right !important; }/* */
+	.lg-left { text-align: left !important; }
+	.lg-center { text-align: center !important; }
+	.lg-right { text-align: right !important; }/* */
 }
 
 /* */
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: $screen-lg) { /* */
+@media (max-width: $screen-lg) { /* */
 	.lg-left { text-align: left !important; }
 	.lg-center { text-align: center !important; }
 	.lg-right { text-align: right !important; }/* */

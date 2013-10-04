@@ -1,6 +1,7 @@
 /* */
 /* static non-generated stuff */
 /* margin helpers */
+.no-margin { margin:0 !important; }
 .no-m-lr, .no-m-rl { margin-left: 0 !important; margin-right: 0 !important; }
 .no-m-tb, .no-m-bt { margin-top: 0 !important; margin-bottom: 0 !important; }
 .m-t-only { margin-left: 0 !important; margin-right: 0 !important; margin-bottom: 0 !important; }
@@ -11,6 +12,7 @@
 
 /* */
 /* padding helpers */
+.no-padding { padding:0 !important; }
 .no-pad-lr, .no-pad-rl { padding-left: 0 !important; padding-right: 0 !important; }
 .no-pad-tb, .no-pad-bt { padding-top: 0 !important; padding-bottom: 0 !important; }
 .pad-t-only { padding-left: 0 !important; padding-right: 0 !important; padding-bottom: 0 !important; }
@@ -58,7 +60,7 @@
 .bg-grey { background-color:$grey; }
 .bg-dark-grey { background-color:$darkGrey; }
 .bg-white, .bg-fff { background-color:$white; }
-.bg-none { background:none; background-image:none; background-color:transparent; }
+.bg-none, .no-bg { background:none; background-image:none; background-color:transparent; }
 
 /* */
 /* font stuff */
