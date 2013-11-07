@@ -1,16 +1,16 @@
 /* 
 *
-*      ___           ___           ___           ___           ___           ___                    ___           ___           ___     
-*     /\  \         /\  \         /\  \         /\__\         /\  \         |\__\                  /\  \         /\  \         /\  \    
-*    /##\  \       /##\  \       /##\  \       /#/  /         \#\  \        |#|  |                /##\  \       /##\  \       /##\  \   
-*   /#/\#\  \     /#/\#\  \     /#/\#\  \     /#/  /           \#\  \       |#|  |               /#/\#\  \     /#/\ \  \     /#/\ \  \  
-*  /#/  \#\__\   /##\~\#\  \   /##\~\#\  \   /#/  /  ___       /##\  \      |#|__|__            /#/  \#\  \   _\#\~\ \  \   _\#\~\ \  \ 
-* /#/__/ \#|__| /#/\#\ \#\__\ /#/\#\ \#\__\ /#/__/  /\__\     /#/\#\__\     /####\__\          /#/__/ \#\__\ /\ \#\ \ \__\ /\ \#\ \ \__\
-* \#\  \ /#/  / \#\~\#\ \/__/ \/__\#\/#/  / \#\  \ /#/  /    /#/  \/__/    /#/~~/~             \#\  \  \/__/ \#\ \#\ \/__/ \#\ \#\ \/__/
-*  \#\  /#/  /   \#\ \#\__\        \##/  /   \#\  /#/  /    /#/  /        /#/  /                \#\  \        \#\ \#\__\    \#\ \#\__\  
-*   \#\/#/  /     \#\ \/__/         \/__/     \#\/#/  /     \/__/         \/__/                  \#\  \        \#\/#/  /     \#\/#/  /  
-*    \##/__/       \#\__\                      \##/  /                                            \#\__\        \##/  /       \##/  /   
-*     ~~            \/__/                       \/__/                                              \/__/         \/__/         \/__/    
+*      ___           ___           ___           ___           ___           ___
+*     /\  \         /\  \         /\  \         /\__\         /\  \         |\__\
+*    /##\  \       /##\  \       /##\  \       /#/  /         \#\  \        |#|  |
+*   /#/\#\  \     /#/\#\  \     /#/\#\  \     /#/  /           \#\  \       |#|  |
+*  /#/  \#\__\   /##\~\#\  \   /##\~\#\  \   /#/  /  ___       /##\  \      |#|__|__
+* /#/__/ \#|__| /#/\#\ \#\__\ /#/\#\ \#\__\ /#/__/  /\__\     /#/\#\__\     /####\__\
+* \#\  \ /#/  / \#\~\#\ \/__/ \/__\#\/#/  / \#\  \ /#/  /    /#/  \/__/    /#/~~/~
+*  \#\  /#/  /   \#\ \#\__\        \##/  /   \#\  /#/  /    /#/  /        /#/  /
+*   \#\/#/  /     \#\ \/__/         \/__/     \#\/#/  /     \/__/         \/__/
+*    \##/__/       \#\__\                      \##/  /
+*     ~~            \/__/                       \/__/
 *
 * Deputy Css v0.1
 *
@@ -1096,6 +1096,7 @@
 /* font stuff */
 .lh-1 { line-height: 1 !important; }
 .lh-13 { line-height: 1.3 !important; }
+.lh-15 { line-height: 1.5 !important; }
 .bold, .strong { font-weight: bold; }
 .no-bold { font-weight: normal; }
 .italic, .em { font-style: italic; }
@@ -1106,7 +1107,7 @@
 .size-small { font-size: 75% !important; }
 .size-normal { font-size: 100% !important; }
 .size-medium { font-size: 125% !important; }
-.size-big { font-size: 150% !important; }
+.size-big, .size-large { font-size: 150% !important; }
 .inherit { font: inherit; }
 .no-wrap { white-space: nowrap; }
 .ls-0 { letter-spacing: -3px; margin-left: 10px; margin-right: 10px; white-space: nowrap; }
@@ -1123,19 +1124,31 @@
 .f-left { float: left; }
 .f-right { float: right; }
 .f-none { float: none; }
-.in-block { display: inline-block !important; *display: inline !important; zoom: 1; }
 .block { display: block !important; }
-.d-none, .hide { display: none !important; }
 .inline { display: inline !important; }
-.rel { position: relative !important; }
-.abs { position: absolute; }
-.v-mid { vertical-align: middle !important; }
+.in-block { display: inline-block !important; *display: inline !important; zoom: 1; }
+.d-none, .hide, .hidden { display: none !important; }
+.rel, .relative { position: relative !important; }
+.abs, .absolute { position: absolute; }
+.fixed { position: fixed; }
+.t-0 { top: 0; }
+.b-0 { bottom: 0; }
+.l-0 { left: 0; }
+.r-0 { right: 0; }
+.tb-0 { top: 0; bottom: 0; }
+.lr-0 { left: 0; right: 0; }
+.v-mid, .v-m { vertical-align: middle !important; }
+.v-top, .v-t { vertical-align: top !important; }
+.v-bottom, .v-b { vertical-align: bottom !important; }
 .full-input input, .full-input select, .full-input textarea { width: 100%; }
+.normal input, .normal select, .normal textarea, .full-input input[type=checkbox], .full-input input[type=radio] { width: auto; }
 .no-shadow { box-shadow: none !important; }
 .no-border-radius { border-radius: 0 !important; }
 /* wrap around a table to make it sorta responsive  */
 .overflow-x-scroll { max-width: 100%; overflow-x: auto; }
-.no-overflow { overflow: hidden; }
+.no-overflow, .no-of, .of-none { overflow: hidden; }
+.of-auto { overflow: auto; }
+.of-scroll { overflow: scroll; }
 
 /* xs-offset classes missing from bootstrap */
 .col-xs-offset-1 { margin-left: 8.333333333333332%; }
