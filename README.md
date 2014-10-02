@@ -63,7 +63,7 @@ Padding and Margin classes are generated in increments of 5 up to 100. Each incr
 
 ```.no-margin``` and ```.no-padding``` - These set padding/margin to 0 on an element
 
-Additional classes are available to clear margin/padding on certain sides.
+Additional classes are available to remove the margin and/or padding on specified sides.
 ex. ```.no-pad-l, .no-m-l, .no-pad-tb, .no-m-lr```
 
 There are also some special classes such as ```.m-auto``` which sets auto left and right margin.
