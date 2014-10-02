@@ -9,7 +9,7 @@ The project is generated with SASS.
 
 It includes padding, margin, width, border, color, typography, and general helpers.
 
-It's a little bit backwards from the "semantic only" school of thought but it's what I prefer.
+It's a little bit backwards from the "semantic only" school of thought but it has practical purposes.  Building with deputy allows for a more modular site build to allow less knowledgeable end users to duplicate and modify elements quickly and easily.
 
 Examples
 =====
