@@ -1,7 +1,7 @@
 Deputy CSS
 ======
 
-Deputy CSS is a simple CSS "library" with helpful css classes for common design requirements.
+Deputy CSS is a simple CSS "mini-library" with helpful css classes for common design requirements.
 
 see GitHub page here http://ry4nolson.github.io/Deputy/
 
